@@ -4,9 +4,9 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
     <package name="struts2login" extends="struts-default">
-        <!--<action name="login" class="com.cjl.www.LoginAction">-->
-            <!--<result name="success">/result.jsp</result>-->
-        <!--</action>-->
+        <action name="login" class="com.cjl.www.LoginAction" method="myExecute">
+            <result name="success">/result.jsp</result>
+        </action>
 
         <action name="userAction" class="com.cjl.www.UserAction">
             <result name="success">/output.jsp</result>

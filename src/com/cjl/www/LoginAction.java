@@ -43,7 +43,12 @@ public class LoginAction {
         this.password = password;
     }
 
-    public String execute(){
+    public String execute() throws Exception{
+        return "success";
+    }
+
+    public String myExecute() throws Exception{
+        System.out.println("LoginAction.myExecute");
         return "success";
     }
 }
