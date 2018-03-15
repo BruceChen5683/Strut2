@@ -11,9 +11,13 @@
     <title>Title</title>
 </head>
 <body>
+<%--login login.action--%>
     <form action="login">
         username:<input type="text" name="username"><br>
         password:<input type="password" name="password"><br>
+        age:<input type="text" name="age">
+        date:<input type="text" name="date">
+
         <input type="submit" value="submit">
 
     </form>

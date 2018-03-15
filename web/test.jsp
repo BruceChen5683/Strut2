@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: chenjianliang
-  Date: 2018/3/1
-  Time: 上午7:10
+  Date: 2018/3/4
+  Time: 下午11:24
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,15 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<%--login login.action--%>
-    <form action="login">
-        username:<input type="text" name="username"><br>
-        password:<input type="password" name="password"><br>
-        age:<input type="text" name="age">
-        date:<input type="text" name="date">
-
+    <h1>使用分号隔开用户名与密码信息e.g. user;password</h1>
+    <form action="userAction.action">
+        user info: <input type="text" name="user"><br>
         <input type="submit" value="submit">
-
     </form>
 </body>
 </html>

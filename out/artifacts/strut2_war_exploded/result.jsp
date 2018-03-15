@@ -13,5 +13,7 @@
 <body>
     username:${requestScope.username}<br>
     password:${requestScope.password}<br>
+    age:${requestScope.age}<br>
+    date:${requestScope.date}<br>
 </body>
 </html>
