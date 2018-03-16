@@ -12,5 +12,12 @@
             <result name="success">/output.jsp</result>
         </action>
 
+
+        <action name="register" class="com.cjl.www.RegisterAction">
+            <result name="success">/registerResult.jsp</result>
+            <!--验证不通过或输入错误重新注册-->
+            <result name="input">/register.jsp</result>
+        </action>
+
     </package>
 </struts>
