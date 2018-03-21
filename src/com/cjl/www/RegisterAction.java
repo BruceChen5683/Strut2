@@ -69,27 +69,27 @@ public class RegisterAction extends ActionSupport{
         return SUCCESS;
     }
 
-    @Override
-    public void validate() {
-        super.validate();
-
-        if (null == name || name.length() < 4 || name.length() > 6){
-            this.addActionError("invalid name");
-            this.addFieldError("name","field error-invalid name");
-        }
-
-        if (null == password || password.length() < 4 || password.length() > 6){
-            this.addActionError("invalid password");
-        }
-
-        if(age < 20 || age > 50){
-            this.addActionError("invalid age");
-        }
-
-//        this.clearActionErrors();
-//        this.clearFieldErrors();
-//        this.getActionErrors().clear();
-//        this.getFieldErrors().clear();
-        System.out.println("RegisterAction.validate");
-    }
+//    @Override
+//    public void validate() {
+//        super.validate();
+//
+//        if (null == name || name.length() < 4 || name.length() > 6){
+//            this.addActionError("invalid name");
+//            this.addFieldError("name","field error-invalid name");
+//        }
+//
+//        if (null == password || password.length() < 4 || password.length() > 6){
+//            this.addActionError("invalid password");
+//        }
+//
+//        if(age < 20 || age > 50){
+//            this.addActionError("invalid age");
+//        }
+//
+////        this.clearActionErrors();
+////        this.clearFieldErrors();
+////        this.getActionErrors().clear();
+////        this.getFieldErrors().clear();
+//        System.out.println("RegisterAction.validate");
+//    }
 }
