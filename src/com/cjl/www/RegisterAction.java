@@ -86,8 +86,8 @@ public class RegisterAction extends ActionSupport{
             this.addActionError("invalid age");
         }
 
-        this.clearActionErrors();
-        this.clearFieldErrors();
+//        this.clearActionErrors();
+//        this.clearFieldErrors();
 //        this.getActionErrors().clear();
 //        this.getFieldErrors().clear();
         System.out.println("RegisterAction.validate");
