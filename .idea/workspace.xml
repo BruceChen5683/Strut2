@@ -16,12 +16,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <marker date="1521163091130" expanded="true" signature="291:1603" ph="..." />
+                <marker date="1521163091130" expanded="true" signature="341:1595" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +32,8 @@
       <file leaf-file-name="RegisterAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cjl/www/RegisterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="106">
+              <caret line="77" column="24" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#385#386#0" expanded="true" />
@@ -105,9 +108,11 @@
       <file leaf-file-name="ActionSupport.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.2.1.1.jar!/com/opensymphony/xwork2/ActionSupport.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+            <state relative-caret-position="137">
+              <caret line="139" column="36" lean-forward="true" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
               <folding>
+                <element signature="e#1527#1528#0" expanded="true" />
+                <element signature="e#1588#1589#0" expanded="true" />
                 <element signature="e#2061#2062#0" expanded="true" />
                 <element signature="e#2105#2106#0" expanded="true" />
                 <element signature="e#2175#2176#0" expanded="true" />
@@ -118,12 +123,41 @@
                 <element signature="e#4559#4560#0" expanded="true" />
                 <element signature="e#5278#5279#0" expanded="true" />
                 <element signature="e#5338#5339#0" expanded="true" />
+                <element signature="e#5376#5377#0" expanded="true" />
+                <element signature="e#5431#5432#0" expanded="true" />
                 <element signature="e#5470#5471#0" expanded="true" />
                 <element signature="e#5526#5527#0" expanded="true" />
+                <element signature="e#5561#5562#0" expanded="true" />
+                <element signature="e#5613#5614#0" expanded="true" />
                 <element signature="e#5646#5647#0" expanded="true" />
                 <element signature="e#5696#5697#0" expanded="true" />
                 <element signature="e#5740#5741#0" expanded="true" />
                 <element signature="e#5801#5802#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidationAwareSupport.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.2.1.1.jar!/com/opensymphony/xwork2/ValidationAwareSupport.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="49" />
+              <folding>
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1672#1673#0" expanded="true" />
+                <element signature="e#2129#2130#0" expanded="true" />
+                <element signature="e#2209#2210#0" expanded="true" />
+                <element signature="e#3366#3367#0" expanded="true" />
+                <element signature="e#3420#3421#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,6 +181,8 @@
       <find>struts-de</find>
       <find>execu</find>
       <find>validate</find>
+      <find>internalGetActionErrors</find>
+      <find>thisFieldErrors</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -173,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/com/cjl/www/LoginAction.java" />
         <option value="$PROJECT_DIR$/web/registerResult.jsp" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
-        <option value="$PROJECT_DIR$/src/com/cjl/www/RegisterAction.java" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/src/com/cjl/www/RegisterAction.java" />
       </list>
     </option>
   </component>
@@ -938,6 +974,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="34e77799-ac3c-4484-bc70-a64eda501d36" name="Default" comment="" />
@@ -945,15 +984,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519859187560</updated>
-      <workItem from="1519859190206" duration="19836000" />
+      <workItem from="1519859190206" duration="22022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19836000" />
+    <option name="totallyTimeSpent" value="22022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1440" height="852" extended-state="6" />
+    <frame x="0" y="27" width="1440" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1350,31 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.2.1.1.jar!/com/opensymphony/xwork2/ActionSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
-          <folding>
-            <element signature="e#2061#2062#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#4376#4377#0" expanded="true" />
-            <element signature="e#4443#4444#0" expanded="true" />
-            <element signature="e#4496#4497#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#5278#5279#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5470#5471#0" expanded="true" />
-            <element signature="e#5526#5527#0" expanded="true" />
-            <element signature="e#5646#5647#0" expanded="true" />
-            <element signature="e#5696#5697#0" expanded="true" />
-            <element signature="e#5740#5741#0" expanded="true" />
-            <element signature="e#5801#5802#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1391,10 +1405,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <marker date="1521163091130" expanded="true" signature="291:1603" ph="..." />
+            <marker date="1521163091130" expanded="true" signature="341:1595" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjl/www/RegisterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        <state relative-caret-position="106">
+          <caret line="77" column="24" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#385#386#0" expanded="true" />
@@ -1425,11 +1450,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.2.1.1.jar!/com/opensymphony/xwork2/ActionSupport.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="137">
+          <caret line="139" column="36" lean-forward="true" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
+          <folding>
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
+            <element signature="e#4443#4444#0" expanded="true" />
+            <element signature="e#4496#4497#0" expanded="true" />
+            <element signature="e#4559#4560#0" expanded="true" />
+            <element signature="e#5278#5279#0" expanded="true" />
+            <element signature="e#5338#5339#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+            <element signature="e#5431#5432#0" expanded="true" />
+            <element signature="e#5470#5471#0" expanded="true" />
+            <element signature="e#5526#5527#0" expanded="true" />
+            <element signature="e#5561#5562#0" expanded="true" />
+            <element signature="e#5613#5614#0" expanded="true" />
+            <element signature="e#5646#5647#0" expanded="true" />
+            <element signature="e#5696#5697#0" expanded="true" />
+            <element signature="e#5740#5741#0" expanded="true" />
+            <element signature="e#5801#5802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.2.1.1.jar!/com/opensymphony/xwork2/ValidationAwareSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="49" />
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#2129#2130#0" expanded="true" />
+            <element signature="e#2209#2210#0" expanded="true" />
+            <element signature="e#3366#3367#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -26,7 +26,7 @@
     <%--</form>--%>
 
 
-    <s:form action="register.action">
+    <s:form action="register.action" >
         <s:textfield name="name" label="name"></s:textfield>
         <s:password name="password" label="password"></s:password>
         <s:password name="repassword" label="repassword"></s:password>
