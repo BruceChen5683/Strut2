@@ -11,7 +11,8 @@
             <!--<param name="trim">false</param>-->
             <param name="maxLength">10</param>
             <param name="minLength">4</param>
-            <message>不能小于${minLength}，大于10</message>
+            <message key="name.invalid"></message>
+            <!--<message>不能小于${minLength}，大于10</message>-->
         </field-validator>
     </field>
 
@@ -24,5 +25,20 @@
             <param name="min">10</param>
             <message>age 10/40</message>
         </field-validator>
+    </field>
+
+    <field name="birthday">
+        <field-validator type="required">
+            <message>
+                date can't be blank
+            </message>
+        </field-validator>
+
+        <field-validator type="date">
+            <param name="min">2015-01-01</param>
+            <param name="max">2018-01-01</param>
+            <message>birthday should between ${min} and ${max}</message>
+        </field-validator>
+
     </field>
 </validators>
