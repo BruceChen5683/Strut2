@@ -4,6 +4,10 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
     <package name="struts2login" extends="struts-default">
+
+        <global-results>
+            <result name="usernameInvalid">usernameinvalid.jsp</result>
+        </global-results>
         <action name="login" class="com.cjl.www.LoginAction" method="myExecute">
             <result name="success">/result.jsp</result>
         </action>
@@ -18,7 +22,7 @@
             <!--验证不通过或输入错误重新注册-->
             <result name="input">/register.jsp</result>
             <exception-mapping exception="com.cjl.www.exception.NameException" result="usernameInvalid"></exception-mapping>
-            <result name="usernameInvalid">usernameinvalid.jsp</result>
+            <!--<result name="usernameInvalid">usernameinvalid.jsp</result>-->
         </action>
 
     </package>
