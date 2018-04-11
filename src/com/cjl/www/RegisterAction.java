@@ -1,6 +1,8 @@
 package com.cjl.www;
 
+import com.cjl.www.exception.NameException;
 import com.opensymphony.xwork2.ActionSupport;
+import org.omg.CORBA.UserException;
 
 import java.util.Date;
 
@@ -66,6 +68,10 @@ public class RegisterAction extends ActionSupport{
     @Override
     public String execute() throws Exception{
         System.out.println("RegisterAction.execute");
+
+        if(!name.equals("hello")){
+            throw new NameException("user name invalid");
+        }
         return SUCCESS;
     }
 

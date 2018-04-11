@@ -17,6 +17,8 @@
             <result name="success">/registerResult.jsp</result>
             <!--验证不通过或输入错误重新注册-->
             <result name="input">/register.jsp</result>
+            <exception-mapping exception="com.cjl.www.exception.NameException" result="usernameInvalid"></exception-mapping>
+            <result name="usernameInvalid">usernameinvalid.jsp</result>
         </action>
 
     </package>
