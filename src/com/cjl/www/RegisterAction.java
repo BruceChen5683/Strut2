@@ -1,6 +1,8 @@
 package com.cjl.www;
 
 import com.cjl.www.exception.NameException;
+import com.cjl.www.impl.LoginServiceImpl;
+import com.cjl.www.service.LoginService;
 import com.opensymphony.xwork2.ActionSupport;
 import org.omg.CORBA.UserException;
 
@@ -16,6 +18,7 @@ public class RegisterAction extends ActionSupport{
     private int age;
     private Date birthday;
     private Date graduation;
+    private LoginService loginService = new LoginServiceImpl();
 
     public String getName() {
         return name;
@@ -65,16 +68,24 @@ public class RegisterAction extends ActionSupport{
         this.graduation = graduation;
     }
 
+
     @Override
     public String execute() throws Exception{
         System.out.println("RegisterAction.execute");
 
-        if(!name.equals("hello")){
-            throw new NameException("user name invalid");
+        if(loginService.isLogin(name,password)){
+            return SUCCESS;
+        }else {
+            return INPUT;
         }
-        return SUCCESS;
+//
+//        if(!name.equals("hello")){//业务相关
+//            throw new NameException("user name invalid");
+//        }
+//        return SUCCESS;
     }
 
+//    业务不想关
 //    @Override
 //    public void validate() {
 //        super.validate();
