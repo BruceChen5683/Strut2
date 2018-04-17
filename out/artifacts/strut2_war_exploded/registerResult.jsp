@@ -12,7 +12,7 @@
     <title>After Reister</title>
 </head>
 <body>
-    username:<s:property value="username"/><br>
+    username:<s:property value="name"/><br>
     password:<s:property value="password"/><br>
     age:<s:property value="age"/><br>
     birthday:<s:property value="brithday"/><br>
