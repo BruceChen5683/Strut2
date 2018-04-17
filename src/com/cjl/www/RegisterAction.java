@@ -4,6 +4,7 @@ import com.cjl.www.exception.NameException;
 import com.cjl.www.impl.LoginServiceImpl;
 import com.cjl.www.service.LoginService;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
 import org.omg.CORBA.UserException;
 
 import java.util.Date;
@@ -71,12 +72,17 @@ public class RegisterAction extends ActionSupport{
 
     @Override
     public String execute() throws Exception{
+
         System.out.println("RegisterAction.execute");
 
         if(loginService.isLogin(name,password)){
+            System.out.println("RegisterAction.SUCCESS");
+
             return SUCCESS;
         }else {
-            return INPUT;
+            System.out.println("RegisterAction.INPUT");
+
+            return INPUT;//语义 用户输入有问题，需要重新输入
         }
 //
 //        if(!name.equals("hello")){//业务相关

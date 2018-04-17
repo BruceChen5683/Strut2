@@ -25,5 +25,9 @@
             <!--<result name="usernameInvalid">usernameinvalid.jsp</result>-->
         </action>
 
+        <action name="register2" class="com.cjl.www.RegisterAction2">
+            <result name="success">/registerResult.jsp</result>
+        </action>
+
     </package>
 </struts>
