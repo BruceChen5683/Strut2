@@ -15,5 +15,7 @@
     password:${requestScope.password}<br>
     age:${requestScope.age}<br>
     date:${requestScope.date}<br>
+
+    session:${sessionScope.cjl}
 </body>
 </html>

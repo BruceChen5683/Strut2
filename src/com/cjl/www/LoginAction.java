@@ -1,8 +1,15 @@
 package com.cjl.www;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.Preparable;
+import org.apache.struts2.ServletActionContext;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Date;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by chenjianliang on 2018/3/1.
@@ -52,6 +59,18 @@ public class LoginAction extends ActionSupport{
 
     public String myExecute() throws Exception{
         System.out.println("LoginAction.myExecute");
+
+        HttpServletRequest request =   ServletActionContext.getRequest();
+        HttpSession session = request.getSession();
+        session.setAttribute("cjl","battlecall");
+
+
+
+        ActionContext actionContext = ActionContext.getContext();
+        Map<String,Object> map = actionContext.getSession();//map实际就是上面的session,提供这个是为了便于junit单元测试
+        Object object = map.get("cjl");
+        System.out.println("LoginAction.myExecute "+object);
+//        System.out.println("LoginAction.myExecute-----"+        session.getAttribute("name"));
         return "success";
     }
 
