@@ -13,6 +13,10 @@
 <body>
 <form action="action1">
     <input type="submit" value="submit">
+
+    <input type="text" name="username">
+    <input type="text" name="password">
+
 </form>
 
 </body>

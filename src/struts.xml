@@ -32,6 +32,9 @@
         <action name="action1" class="com.cjl.www.Action1">
             <result name="success" type="redirectAction">
                 <param name="actionName">action2</param>
+                <param name="username">${username}</param>
+                <param name="password">${password}</param>
+                <param name="up">${up}</param>
             </result>
         </action>
 
