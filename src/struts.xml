@@ -29,5 +29,15 @@
             <result name="success">/registerResult.jsp</result>
         </action>
 
+        <action name="action1" class="com.cjl.www.Action1">
+            <result name="success" type="redirectAction">
+                <param name="actionName">action2</param>
+            </result>
+        </action>
+
+        <action name="action2" class="com.cjl.www.Action2">
+            <result name="success">/action2.jsp</result>
+        </action>
+
     </package>
 </struts>
