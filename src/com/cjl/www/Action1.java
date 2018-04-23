@@ -14,6 +14,7 @@ public class Action1 extends ActionSupport{
     private String up;
 
     public String getUp(){
+        System.out.println("Action1.getUp");
         return up;
     }
 
@@ -35,6 +36,7 @@ public class Action1 extends ActionSupport{
 
     @Override
     public String execute() throws Exception {
+        System.out.println("Action1.execute");
         up = this.username+this.password;
         return SUCCESS;
     }
