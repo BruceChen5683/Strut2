@@ -47,5 +47,13 @@
             <result name="success">/action2.jsp</result>
         </action>
 
+
+        <action name="token" class="com.cjl.www.TokenAction">
+            <result name="success">/tokenSuccess.jsp</result>
+            <result name="invalid.token">/tokenFail.jsp</result>
+
+            <interceptor-ref name="token"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
     </package>
 </struts>
