@@ -40,4 +40,9 @@ public class Action1 extends ActionSupport{
         up = this.username+this.password;
         return SUCCESS;
     }
+
+    public String myExecute() throws Exception{
+        System.out.println("Action1.myExecute");
+        return SUCCESS;
+    }
 }

@@ -3,10 +3,35 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
+
     <package name="struts2login" extends="struts-default">
+
+        <interceptors>
+            <interceptor name="firstInterceptor" class="com.cjl.www.interceptor.Interceptor1">
+                <param name="test">battlecall</param>
+            </interceptor>
+
+            <interceptor name="thirdInterceptor" class="com.cjl.www.interceptor.Interceptor3">
+
+            </interceptor>
+
+            <interceptor name="loginInterceptor" class="com.cjl.www.interceptor.LoginInterceptor">
+
+            </interceptor>
+
+            <interceptor-stack name="myInterceptorStack">
+                <interceptor-ref name="loginInterceptor"></interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="myInterceptorStack">
+
+        </default-interceptor-ref>
 
         <global-results>
             <result name="usernameInvalid">usernameinvalid.jsp</result>
+            <result name="login">/error.jsp</result>
         </global-results>
         <action name="login" class="com.cjl.www.LoginAction" method="myExecute">
             <result name="success">/result.jsp</result>
@@ -29,7 +54,7 @@
             <result name="success">/registerResult.jsp</result>
         </action>
 
-        <action name="action1" class="com.cjl.www.Action1">
+        <action name="action1" class="com.cjl.www.Action1" method="myExecute">
             <result name="success" type="redirectAction">
                 <param name="actionName">action2</param>
                 <!--下面的参数再浏览器请求时发给下一个action-->
@@ -37,6 +62,12 @@
                 <param name="password">${password}</param>
                 <param name="up">${up}</param>
             </result>
+
+            <interceptor-ref name="firstInterceptor"></interceptor-ref>
+            <interceptor-ref name="thirdInterceptor">
+                <param name="includeMethods">execute,myExecute</param>
+                <param name="excludeMethods"></param>
+            </interceptor-ref>
 
             <!--<result name="success" type="chain">-->
                 <!--<param name="actionName">action2</param>-->
@@ -54,6 +85,12 @@
 
             <interceptor-ref name="token"></interceptor-ref>
             <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+    </package>
+
+    <package name="hello" extends="struts-default" namespace="/nameSpace">
+        <action name="nameSpaceTest" class="com.cjl.www.NameSpaceAction">
+            <result name="success">output.jsp</result>
         </action>
     </package>
 </struts>

@@ -1,8 +1,10 @@
 package com.cjl.www;
 
+import com.cjl.www.bean.User;
 import com.cjl.www.exception.NameException;
 import com.cjl.www.impl.LoginServiceImpl;
 import com.cjl.www.service.LoginService;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import org.omg.CORBA.UserException;
@@ -76,14 +78,16 @@ public class RegisterAction extends ActionSupport{
         System.out.println("RegisterAction.execute");
 
         if(loginService.isLogin(name,password)){
+            User user = new User();
+            user.setUser(name);
+            user.setPassword(password);
             System.out.println("RegisterAction.SUCCESS");
-
+            ActionContext.getContext().getSession().put("userInfo",user);
             return SUCCESS;
-        }else {
-            System.out.println("RegisterAction.INPUT");
-
-            return INPUT;//语义 用户输入有问题，需要重新输入
         }
+            System.out.println("RegisterAction.INPUT");
+            return INPUT;//语义 用户输入有问题，需要重新输入
+
 //
 //        if(!name.equals("hello")){//业务相关
 //            throw new NameException("user name invalid");

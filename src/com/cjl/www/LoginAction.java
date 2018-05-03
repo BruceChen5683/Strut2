@@ -54,6 +54,7 @@ public class LoginAction extends ActionSupport{
 
     public String execute() throws Exception{
         System.out.println("LoginAction.execute");
+
         return "success";
     }
 
