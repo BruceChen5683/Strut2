@@ -19,15 +19,15 @@
 
             </interceptor>
 
-            <interceptor-stack name="myInterceptorStack">
-                <interceptor-ref name="loginInterceptor"></interceptor-ref>
-                <interceptor-ref name="defaultStack"></interceptor-ref>
-            </interceptor-stack>
+            <!--<interceptor-stack name="myInterceptorStack">-->
+                <!--<interceptor-ref name="loginInterceptor"></interceptor-ref>-->
+                <!--<interceptor-ref name="defaultStack"></interceptor-ref>-->
+            <!--</interceptor-stack>-->
         </interceptors>
 
-        <default-interceptor-ref name="myInterceptorStack">
+        <!--<default-interceptor-ref name="myInterceptorStack">-->
 
-        </default-interceptor-ref>
+        <!--</default-interceptor-ref>-->
 
         <global-results>
             <result name="usernameInvalid">usernameinvalid.jsp</result>
@@ -85,6 +85,10 @@
 
             <interceptor-ref name="token"></interceptor-ref>
             <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <action name="fileUpload" class="com.cjl.www.FileUploadAction">
+            <result name="success">/fileUploadResult.jsp</result>
         </action>
     </package>
 
