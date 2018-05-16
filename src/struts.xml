@@ -4,7 +4,12 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 
+    <!--<constant name="struts.devMode" value="false">-->
+    <!---->
+    <!--</constant>-->
+
     <package name="struts2login" extends="struts-default">
+
 
         <interceptors>
             <interceptor name="firstInterceptor" class="com.cjl.www.interceptor.Interceptor1">
