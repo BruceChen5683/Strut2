@@ -95,6 +95,13 @@
         <action name="fileUpload" class="com.cjl.www.FileUploadAction">
             <result name="success">/fileUploadResult.jsp</result>
         </action>
+
+        <action name="downloadFile" class="com.cjl.www.FileDownLoadAction">
+            <result name="success" type="stream">
+                <param name="contentDisposition">attachment;filename="FAQ"</param>
+                <param name="inputName">mydownloadFile</param>
+            </result>
+        </action>
     </package>
 
     <package name="hello" extends="struts-default" namespace="/nameSpace">
