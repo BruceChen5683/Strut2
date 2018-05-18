@@ -36,8 +36,13 @@ public class FileDownloadAction2 extends ActionSupport {
         try {
             switch (number){
                 case 1:
-                    inputStream = new FileInputStream(new File("/Users/chenjianliang/IdeaProjects/strut2/upload/FAQ"));
-                    fileName = "FAQ";
+                    inputStream = new FileInputStream(new File("/Users/chenjianliang/IdeaProjects/strut2/upload/中文测试.txt"));
+                    fileName = "中文测试.txt";
+                    System.out.println("FileDownloadAction2.getDownloadFile "+fileName);
+//                    fileName = new String(fileName.getBytes("UTF-8"));
+                    fileName = new String(fileName.getBytes("utf-8"),"ISO8859-1");
+
+//                    System.out.println("FileDownloadAction2.getDownloadFile "+fileName);
                     break;
                 case 2:
                     inputStream = new FileInputStream(new File("/Users/chenjianliang/IdeaProjects/strut2/upload/pw.txt"));
