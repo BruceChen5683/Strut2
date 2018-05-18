@@ -96,10 +96,10 @@
             <result name="success">/fileUploadResult.jsp</result>
         </action>
 
-        <action name="downloadFile" class="com.cjl.www.FileDownLoadAction">
+        <action name="downloadFile2" class="com.cjl.www.FileDownloadAction2">
             <result name="success" type="stream">
-                <param name="contentDisposition">attachment;filename="FAQ"</param>
-                <param name="inputName">mydownloadFile</param>
+                <param name="contentDisposition">attachment;filename=${fileName}</param>
+                <param name="inputName">downloadFile</param>
             </result>
         </action>
     </package>

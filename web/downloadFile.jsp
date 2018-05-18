@@ -11,6 +11,9 @@
     <title>下载文件页面</title>
 </head>
 <body>
-    <a href="downloadFile.action">下载文件</a>
+    <a href="downloadFile2.action?number=1">下载文件</a>
+    <a href="downloadFile2.action?number=2">下载文件</a>
+    <a href="downloadFile2.action?number=3">下载文件</a>
+
 </body>
 </html>

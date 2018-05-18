@@ -13,7 +13,7 @@ import java.io.InputStream;
 public class FileDownLoadAction extends ActionSupport {
     public InputStream getMydownloadFile(){
         try {
-            FileInputStream inputStream = new FileInputStream(new File("/Users/chenjianliang/IdeaProjects/strut2//upload/FAQ"));
+            FileInputStream inputStream = new FileInputStream(new File("/Users/chenjianliang/IdeaProjects/strut2/upload/FAQ"));
             return inputStream;
         }catch (Exception e){
             return null;
