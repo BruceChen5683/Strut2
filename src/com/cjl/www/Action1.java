@@ -1,10 +1,13 @@
 package com.cjl.www;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Result;
 
 /**
  * Created by chenjianliang on 2018/4/23.
  */
+@Action(value = "action1",results = @Result(name = "success",location = "/error.jsp"))
 public class Action1 extends ActionSupport{
 
     private String username;

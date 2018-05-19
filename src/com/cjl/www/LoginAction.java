@@ -5,8 +5,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.Preparable;
 import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
@@ -61,9 +61,9 @@ public class LoginAction extends ActionSupport{
     public String myExecute() throws Exception{
         System.out.println("LoginAction.myExecute");
 
-        HttpServletRequest request =   ServletActionContext.getRequest();
-        HttpSession session = request.getSession();
-        session.setAttribute("cjl","battlecall");
+//        HttpServletRequest request =   ServletActionContext.getRequest();
+//        HttpSession session = request.getSession();
+//        session.setAttribute("cjl","battlecall");
 
 
 

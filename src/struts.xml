@@ -8,6 +8,15 @@
     <!---->
     <!--</constant>-->
 
+    <!--
+    First the Convention plugin finds packages named struts, struts2, action or actions. Any packages that match those names are considered the root packages for the Convention plugin. Next, the plugin looks at all of the classes in those packages as well as sub-packages and determines if the classes implementcom.opensymphony.xwork2.Action or if their name ends with Action (i.e. FooAction).
+
+
+注意我标红的内容，也就是说，如果要用Struts2的注解，你还非得将action处理类放在struts, struts2, action, actions包或者其子包中。以前总是习惯性的将所有的action处理类放在com.xxx.action下，以为仅仅是习惯而已，没曾想Struts2还就是这么规定的。
+
+-->
+    <constant name="struts.convention.package.locators" value="struts, struts2, action, actions,www"></constant>
+
     <package name="struts2login" extends="struts-default">
 
 
@@ -59,25 +68,25 @@
             <result name="success">/registerResult.jsp</result>
         </action>
 
-        <action name="action1" class="com.cjl.www.Action1" method="myExecute">
-            <result name="success" type="redirectAction">
-                <param name="actionName">action2</param>
-                <!--下面的参数再浏览器请求时发给下一个action-->
-                <param name="username">${username}</param>
-                <param name="password">${password}</param>
-                <param name="up">${up}</param>
-            </result>
-
-            <interceptor-ref name="firstInterceptor"></interceptor-ref>
-            <interceptor-ref name="thirdInterceptor">
-                <param name="includeMethods">execute,myExecute</param>
-                <param name="excludeMethods"></param>
-            </interceptor-ref>
-
-            <!--<result name="success" type="chain">-->
+        <!--<action name="action1" class="com.cjl.www.Action1" method="myExecute">-->
+            <!--<result name="success" type="redirectAction">-->
                 <!--<param name="actionName">action2</param>-->
+                <!--&lt;!&ndash;下面的参数再浏览器请求时发给下一个action&ndash;&gt;-->
+                <!--<param name="username">${username}</param>-->
+                <!--<param name="password">${password}</param>-->
+                <!--<param name="up">${up}</param>-->
             <!--</result>-->
-        </action>
+
+            <!--<interceptor-ref name="firstInterceptor"></interceptor-ref>-->
+            <!--<interceptor-ref name="thirdInterceptor">-->
+                <!--<param name="includeMethods">execute,myExecute</param>-->
+                <!--<param name="excludeMethods"></param>-->
+            <!--</interceptor-ref>-->
+
+            <!--&lt;!&ndash;<result name="success" type="chain">&ndash;&gt;-->
+                <!--&lt;!&ndash;<param name="actionName">action2</param>&ndash;&gt;-->
+            <!--&lt;!&ndash;</result>&ndash;&gt;-->
+        <!--</action>-->
 
         <action name="action2" class="com.cjl.www.Action2">
             <result name="success">/action2.jsp</result>
