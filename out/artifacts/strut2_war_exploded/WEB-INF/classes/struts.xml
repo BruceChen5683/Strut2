@@ -15,7 +15,7 @@
 注意我标红的内容，也就是说，如果要用Struts2的注解，你还非得将action处理类放在struts, struts2, action, actions包或者其子包中。以前总是习惯性的将所有的action处理类放在com.xxx.action下，以为仅仅是习惯而已，没曾想Struts2还就是这么规定的。
 
 -->
-    <constant name="struts.convention.package.locators" value="struts, struts2, action, actions,www"></constant>
+    <constant name="struts.convention.package.locators" value="struts, struts2, action, actions,www,xml"></constant>
 
     <package name="struts2login" extends="struts-default">
 
