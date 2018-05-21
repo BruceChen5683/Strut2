@@ -14,7 +14,7 @@
     <script type="text/javascript">
         $(function () {
             $("#button1").click(function () {
-                $.get("getJsonAction.action",{name:$("#name").text()},function (returnData,status) {
+                $.get("getJsonAction2.action",{name:$("#name").text()},function (returnData,status) {
                     var html = "<table width='60%' border='1' align='center'><tr><th>id</th><th>name</th><th>age</th><th>homeAddress</th>";
 
 //                    for (var i = 0;i < returnData.length;i++){
