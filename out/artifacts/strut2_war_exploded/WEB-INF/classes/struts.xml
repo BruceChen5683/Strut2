@@ -114,7 +114,9 @@
 
 
         <action name="getJsonAction2" class="com.cjl.www.json.GetJsonAction2">
-            <result name="success" type="json"></result>
+            <result name="success" type="json">
+                <param name="excludeProperties">name</param>
+            </result>
         </action>
 
     </package>
