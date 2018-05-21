@@ -22,7 +22,7 @@
 
                         var id = person.id;
                         var name = person.name;
-                        var age = person.age;
+                        var age = person.myAge;
                         var homeAddress = person.homeAddress;
 
                         html += "<tr align='center'><td>" + id + "</td><td>" +name+"</td><td>"+ age

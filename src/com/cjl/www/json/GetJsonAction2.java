@@ -1,6 +1,7 @@
 package com.cjl.www.json;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.json.annotations.JSON;
 
 /**
  * Created by chenjianliang on 2018/5/21.
@@ -35,6 +36,7 @@ public class GetJsonAction2 extends ActionSupport{
         this.id = id;
     }
 
+    @JSON(name = "myAge")
     public int getAge() {
         return age;
     }
