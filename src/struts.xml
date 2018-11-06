@@ -119,6 +119,15 @@
             </result>
         </action>
 
+
+
+        <action name="ognlAction" class="com.cjl.www.ognl.OnglAction">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <interceptor-ref name="execAndWait"></interceptor-ref>
+            <result name="wait">/wait.jsp</result>
+            <result name="success">/ognl.jsp</result>
+        </action>
+
     </package>
 
     <package name="hello" extends="struts-default" namespace="/nameSpace">
